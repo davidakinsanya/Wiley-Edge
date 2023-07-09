@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- The VendingActionImpl class is instrumental
+    to kicking off the program, so we instantiate a spring bean for this. -->
+    <bean id="vendingImpl" class="org.example.dao.VendingActionsImpl" />
+
+    <!-- The VendingView class provides a command line interface,
+     so we also instantiate a spring bean for this -->
+    <bean id="view" class="org.example.dao.VendingView" >
+
+        <!-- The VendingView class accepts a
+        VendingActionsImpl object as a parameter,
+          so it has to be declared within the bean. -->
+        <constructor-arg ref="vendingImpl" />
+    </bean>
+
+</beans>

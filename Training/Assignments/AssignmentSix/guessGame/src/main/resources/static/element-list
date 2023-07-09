@@ -1,0 +1,6 @@
+com.project.guessGame
+com.project.guessGame.controller
+com.project.guessGame.dao.db
+com.project.guessGame.dao.logic
+com.project.guessGame.dao.mapper
+com.project.guessGame.dto

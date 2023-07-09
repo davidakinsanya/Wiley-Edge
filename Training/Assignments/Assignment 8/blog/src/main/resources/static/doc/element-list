@@ -1,0 +1,5 @@
+com.example.blog
+com.example.blog.controller
+com.example.blog.dao
+com.example.blog.dao.mapper
+com.example.blog.dto

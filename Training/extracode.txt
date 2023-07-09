@@ -1,0 +1,49 @@
+/*
+    Stream<Item> filteredCart
+            = Transaction.transactionItems.stream();
+
+    filteredCart.forEach(x -> System.out.println(x.getId() + ": " +
+            x.getItemName() + " £" +
+            x.getItemPrice().multiply( BigDecimal.valueOf(x.getQuantitySelected()))));
+
+
+    String cart = cartModifications(produceCartStream());
+
+    while(cart.equals("y")) {
+      cart = cartModifications(produceCartStream());
+    } */
+
+
+
+  /*
+  public String cartModifications(Stream<Item> filteredCart) {
+    System.out.print("\nClick 'y' to modify your cart or any other button to pay: ");
+
+    if (Objects.equals(scString.next(), "y")) {
+      System.out.println("\n");
+      filteredCart.forEach(x -> System.out.println(x.getId() + ": " + x.getItemName()));
+      System.out.print("\nSelect the ID of the item you want to remove: ");
+      return removeItemFromCart(produceCartStream(), scInt.nextInt());
+    }
+    return "n";
+  } 
+
+  public String removeItemFromCart(Stream<Item> cart, int id) {
+    Stream<Item> removedItem = cart.filter(i -> i.getId() == id);
+    if (removedItem.count() == 1) {
+
+      Item item = Transaction.getItem(id);
+      if (item != null) {
+
+        System.out.print("\nHow many of " + item.getItemName() + " do you want to remove: ");
+        int removeAmt = scInt.nextInt();
+        item.setInventoryLevel(item.getInventoryLevel() + removeAmt);
+        item.setQuantitySelected(item.getQuantitySelected() - removeAmt);
+        return cartModifications(cart);
+      }
+    }
+    System.out.println("Could not remove that item from the cart ..");
+    return cartModifications(cart);
+  }
+  
+   */

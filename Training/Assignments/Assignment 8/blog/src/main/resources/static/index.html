@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Blog</title>
+
+</head>
+<style>
+    #searchDiv {
+    padding-top:50px
+    }
+
+    #searchLabel {
+    padding-right:10px
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row m-4">
+        <div class="col text-center border border-dark">
+            <h1>Enter A Blog Entry</h1>
+        </div>
+    </div>
+    <form action="/blog" method="POST">
+    <div class="row m-4" id="searchDiv">
+        <label id="searchLabel" >Search:</label>
+        <input name="search" id="search" th:value="${search}" size="50"/>
+        <button type="submit" class="btn btn-primary" id="searchButton">Go</button>
+    </div>
+    </form>
+</div>
+</body>
+</html>

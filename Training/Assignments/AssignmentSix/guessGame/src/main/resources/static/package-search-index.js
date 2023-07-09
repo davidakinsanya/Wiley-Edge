@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.project.guessGame"},{"l":"com.project.guessGame.controller"},{"l":"com.project.guessGame.dao.db"},{"l":"com.project.guessGame.dao.logic"},{"l":"com.project.guessGame.dao.mapper"},{"l":"com.project.guessGame.dto"}];updateSearchResults();
